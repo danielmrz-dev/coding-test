@@ -2,7 +2,7 @@
 
 ## Instructions
 
-The project was built using HTML, CSS and Javascript, so you just need the link below to run it.
+The project was built using HTML, CSS and Javascript, so you just need one of the links below to run it.
 
 ## Links
 
