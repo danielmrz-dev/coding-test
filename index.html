@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A web user management dashboard application">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>User Management Dashboard</title>
+</head>
+<body>
+    <main class="dashboard">
+        <h1 class="dashboard__title">User Management Dashboard</h1>
+        <form class="dashboard__form">
+            <input type="text" name="" id="" class="dashboard__search-input" placeholder="Search user by name...">
+            <button class="dashboard__fetch-users-btn">Fetch Users</button>
+        </form>
+        <table class="dashboard__table"></table>
+
+        <nav class="pagination hidden">
+            <button class="prev-page">Prev</button>
+            <span class="current-page"></span>
+            <button class="next-page">Next</button>
+        </nav>
+
+        <dialog class="modal">
+            <div class="modal-container">
+                <h2>User detailed information</h2>
+                <div class="user-detailed-info">
+                    <p>
+                        User ID: <span class="user-id"></span>
+                    </p>
+                    <p>
+                        Name: <span class="user-name"></span>
+                    </p>
+                    <p>
+                        Username: <span class="user-username"></span>
+                    </p>
+                    <p>
+                        Email: <span class="user-email"></span>
+                    </p>
+                    <p>
+                        Address: <span class="user-address"></span>
+                    </p>
+                    <p>
+                        Phone: <span class="user-phone"></span>
+                    </p>
+                    <p>
+                        Website: <span class="user-website"></span>
+                    </p>
+                    <p>
+                        Company: <span class="user-company"></span>
+                    </p>
+                    <p>
+                        Company's Catch Phrase: <span class="user-company-catch-phrase"></span>
+                    </p>
+                    <p>
+                        Company's Business Strategy: <span class="user-company-bs"></span>
+                    </p>
+                </div>
+                <button class="close-modal">Close</button>
+            </div>
+        </dialog>
+    </main>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
